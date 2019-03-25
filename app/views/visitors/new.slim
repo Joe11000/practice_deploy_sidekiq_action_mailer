@@ -1,0 +1,11 @@
+= form_with url: new_visitor_path, scope: 'visitor' , local: true do |f| 
+  = f.label :to 
+  = f.text_field :to 
+  br
+  = f.label :subject 
+  = f.text_field :subject 
+  br
+  = f.label :body 
+  = f.text_area :body, size: '80x14'
+  br
+  = f.submit

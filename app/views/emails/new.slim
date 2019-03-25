@@ -1,0 +1,11 @@
+- if flash.notice
+  p = flash.notice
+
+= form_with {url: new_email_path, scope: 'email' }, local: true do |f|
+  = f.label :to 
+  = f.text_field :to 
+  = f.label :subject 
+  = f.text_field :subject 
+  = f.label :body 
+  = f.text_area :body, size: '80x14'
+  = f.submit

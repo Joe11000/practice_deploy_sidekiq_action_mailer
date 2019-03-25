@@ -1,0 +1,5 @@
+{
+  "name": "practice_deploy_sidekiq_action_mailer",
+  "private": true,
+  "dependencies": {}
+}
